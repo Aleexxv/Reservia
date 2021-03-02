@@ -5,8 +5,12 @@ body{
     padding: 0;
 }
 
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    }
 
-/*header*/
+            /*header*/
 
 .flex{
     display: flex;
@@ -15,17 +19,17 @@ body{
 
 .img-logo{
     max-width: 100px;
-    padding: 2.5rem;
+    padding: 3.5rem 0 0 0 ;
 }
 
 .item-menu a{
-    padding: 0 2.5rem;
+    padding: 0 2.3rem;
     text-decoration: none;
 }
 
 .item-menu ul{
     list-style: none;
-    margin: 2.5rem;
+    margin: 3.5rem 2rem 0 0;
     
 }
 
@@ -39,8 +43,8 @@ body{
 
 .item-menu a:focus{
     color: #0065FC;
-    border-top: #0065FC 4px solid;
-    padding-top: 2.4rem;
+    border-top: #0065FC 3.5px solid;
+    padding-top: 3.4rem;
 }
 
 .item-menu a:hover{
@@ -56,4 +60,10 @@ body{
 
 .couleur-bleu{
     color: #0065FC!important;
+}
+
+            /*main*/
+
+h1{
+    padding-top: 1rem;
 }
