@@ -67,3 +67,14 @@ body{
 h1{
     padding-top: 1rem;
 }
+
+.filtre{
+    justify-content: start;
+}
+
+i{
+    color: #0065FC;
+    padding-right: 1rem;
+    border: 2px solid grey;
+    border-radius: 50% 50%;
+}
