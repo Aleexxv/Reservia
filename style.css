@@ -30,7 +30,7 @@ header{
 
 .item-menu ul{
     list-style: none;
-    margin: 3.5rem 2rem 0 0;
+    margin: 3.5rem 0 0 0;
     
 }
 
@@ -40,6 +40,7 @@ header{
 
 .item-menu a{
     color: black;
+    font-weight: 500;
 }
 
 .item-menu a:focus{
@@ -212,6 +213,7 @@ footer>div{
 
 footer div {
     margin-right: 17rem;
+    margin-bottom: 4rem;
 }
 
 footer h2{
