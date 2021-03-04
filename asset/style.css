@@ -7,6 +7,8 @@ body{
 
 
 
+
+
             /*HEADER*/
 
 header{
@@ -16,6 +18,7 @@ header{
 .flex{
     display: flex;
     justify-content: space-between;
+    flex-direction: inherit;
 }
 
 .img-logo{
@@ -118,6 +121,10 @@ padding: 0.5rem;
     color: #DEEBFF;
 }
 
+.info{
+    margin-bottom: 2rem;
+}
+
 .info p i{ 
     color: #0065FC;
     padding: 0.4rem 0.7rem;
@@ -168,15 +175,15 @@ padding: 0.5rem;
 }
 
 .button{
-border-radius: 0 1rem 1rem 0 ;
-background: #0065FC;
-color: white;
-padding: 1rem;
-font-size: 1.1rem;
-font-weight: bold;
-text-align: center;
-text-decoration: none;
-border: none;
+    border-radius: 0 1rem 1rem 0 ;
+    background: #0065FC;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
 }
 
 .champ::placeholder{
@@ -195,8 +202,16 @@ border: none;
 
 .hosting{
     background: #f2f2f2;
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
     border-radius: 2rem;
+    margin-right: 3rem;
+}
+
+.hosting img{
+    height: 8rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: auto;
 }
 
 .popular{
@@ -205,10 +220,86 @@ border: none;
     border-radius: 2rem;
 }
 
+.popular h2{
+    margin-bottom: 0;
+}
+
+.popular img{
+    height: 10rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.test:nth-child(3){
+    margin: 0;
+}
+
+.graph{
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
 figure{
     background: white;
-    padding: 2rem;
+    padding: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem 2rem 1rem 0;
+}
+
+figcaption h3{
+    margin: 0.2rem 0;
+}
+
+figcaption p{
+    margin: 0.5rem 0;
+}
+
+.popular figcaption{
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+.popular figure{
+    margin: 2rem 0;
+}
+
+.star{
+    color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+.popular .star{
+    padding-top: 2rem;
+}
+
+.activity{
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.activity-column{
+    flex-direction: column;
+}
+
+
+.activity figure{
+    background: #f2f2f2;
+    padding: 0;
+    margin: 1;
+    width: 20rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 2rem 2rem 0;
+}
+
+.activity h4{
+    margin-left: 1rem;
+}
+
+.activity img{
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: auto;
+
 }
 
 
