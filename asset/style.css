@@ -273,6 +273,12 @@ figcaption p{
     padding-top: 2rem;
 }
 
+.more-info{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 .activity{
     margin-bottom: 3rem;
     padding-top: 2rem;
@@ -298,11 +304,7 @@ figcaption p{
 .activity img{
     border-radius: 1.5rem 1.5rem 0 0;
     width: 100%;
-    height: auto;
-
 }
-
-
 
             /*FOOTER*/
 
