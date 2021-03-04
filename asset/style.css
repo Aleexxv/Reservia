@@ -17,8 +17,14 @@ header{
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: inherit;
+    flex-wrap: wrap;
+
+}
+
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .img-logo{
@@ -210,14 +216,14 @@ padding: 0.5rem;
 .hosting img{
     height: 8rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    width: 100%;
-    height: auto;
+    width: 15rem;
 }
 
 .popular{
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 2rem;
+    max-width: 25rem;
 }
 
 .popular h2{
@@ -227,8 +233,7 @@ padding: 0.5rem;
 .popular img{
     height: 10rem;
     border-radius: 1.5rem 0 0 1.5rem;
-    width: 100%;
-    height: auto;
+    width: 10rem;
 }
 
 .test:nth-child(3){
@@ -262,6 +267,7 @@ figcaption p{
 
 .popular figure{
     margin: 2rem 0;
+    display: run-in;
 }
 
 .star{
@@ -284,11 +290,6 @@ figcaption p{
     padding-top: 2rem;
 }
 
-.activity-column{
-    flex-direction: column;
-}
-
-
 .activity figure{
     background: #f2f2f2;
     padding: 0;
@@ -305,6 +306,33 @@ figcaption p{
     border-radius: 1.5rem 1.5rem 0 0;
     width: 100%;
 }
+
+.column-left>img{
+    height: 25rem;
+}
+
+.column-right{
+    flex-direction: column;
+}
+
+.column-right>figure>.img-top{
+    height: 12em;
+}
+
+.column-right>figure>.img-top-2{
+    height: 9em;
+}
+
+.column-right>figure>.img-bottom{
+    height: 7em;
+}
+
+.column-right>figure>.img-bottom-2{
+    height: 10em;
+}
+
+
+
 
             /*FOOTER*/
 
@@ -350,3 +378,25 @@ footer a{
     text-decoration: none;
     color: black;
 }
+
+
+
+@media (max-width: 590px) { 
+
+    .popular{
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    header, main, footer{
+        margin: 0rem;
+    }
+
+    #hosting{
+        flex-wrap: wrap-reverse;
+    }
+
+
+}
+
+
