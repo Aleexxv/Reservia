@@ -13,6 +13,7 @@ body{
 
 header{
     margin: 0 3rem;
+    display: block;
 }
 
 .flex{
@@ -103,8 +104,17 @@ padding: 0.5rem;
     list-style: none;
 }
 
+.filter ul li:hover > a > .blue-bubble {
+    background: #0065FC!important;
+    color: #DEEBFF;
+}
+
 .filter ul li:hover{
     background: #DEEBFF;
+}
+
+.filter ul li:hover > a {
+    color: #0065FC;
 }
 
 .blue-bubble{
@@ -207,11 +217,15 @@ padding: 0.5rem;
     margin-right: 3rem;
 }
 
+.hosting figure{
+    width: 15rem
+}
+
 .hosting img{
-    height: 8rem;
     border-radius: 1.5rem 1.5rem 0 0;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 8rem;
 }
 
 .popular{
@@ -225,15 +239,31 @@ padding: 0.5rem;
 }
 
 .popular img{
-    height: 10rem;
     border-radius: 1.5rem 0 0 1.5rem;
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+    width: 10rem;
 }
 
-.test:nth-child(3){
-    margin: 0;
+.popular figcaption{
+    margin-left: 1rem;
+    padding-right: 1rem;
 }
+
+.popular figure{
+    margin: 2rem 0;
+    height: 10rem;
+    justify-content: start;
+}
+
+.star{
+    color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+.popular .star{
+    padding-top: 2rem;
+}
+
 
 .graph{
     margin: 1.5rem 0 0 0;
@@ -253,24 +283,6 @@ figcaption h3{
 
 figcaption p{
     margin: 0.5rem 0;
-}
-
-.popular figcaption{
-    margin-left: 1rem;
-    padding-right: 1rem;
-}
-
-.popular figure{
-    margin: 2rem 0;
-}
-
-.star{
-    color: #f2f2f2;
-    margin-bottom: 1rem;
-}
-
-.popular .star{
-    padding-top: 2rem;
 }
 
 .activity{
@@ -297,11 +309,33 @@ figcaption p{
 
 .activity img{
     border-radius: 1.5rem 1.5rem 0 0;
+    object-fit: cover;
     width: 100%;
-    height: auto;
-
 }
 
+.img-1{
+    height: 30rem;
+}
+
+.img-2{
+    height: 15rem;
+}
+
+.img-3{
+    height: 9rem;
+}
+
+.img-4{
+    height: 30rem;
+}
+
+.img-5{
+    height: 10rem;
+}
+
+.img-6{
+    height: 14rem;
+}
 
 
             /*FOOTER*/
@@ -347,4 +381,115 @@ footer li{
 footer a{
     text-decoration: none;
     color: black;
+}
+
+
+
+@media screen and (max-width: 640px){
+
+    header{
+        margin: 0 1rem;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+
+    .img-logo{
+        padding: 2rem 0 0 2rem;
+    }
+
+    .item-menu ul {
+        margin: 1rem 0;
+        padding: 0 2rem;
+    }
+
+    .item-menu ul a {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+
+    header:first-child{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .h1, .filter, .search-bar, .info{
+        margin: 0 1rem;
+    }
+
+    .register{
+        position: relative;
+        bottom: 3em;
+        right: 4rem;
+    }
+
+    .champ{
+        width: 50%;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .button-responsive, input[type="value"]{
+        display: hidden;
+        background: url(./asset/img/);
+    }
+
+    .filter{
+        flex-direction: column;
+    }
+
+    .filter ul{
+        margin-top: 0;
+    }
+
+    .filter p{
+        margin-bottom: 0;
+    }
+
+    #hosting {
+        flex-direction: column-reverse;
+    }
+
+    .hosting{
+        flex-direction: column;
+        padding: 0;
+        background: none;
+        margin: 0 auto;
+    }
+
+    .hosting figure{
+        margin: 1rem auto;
+        width: 95%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 2rem 2rem 0;
+    }
+
+    .popular{
+        border-radius: 0;
+    }
+
+    .activity-item-nav{
+        margin: 0 3rem;
+    }
+
+    .activity{
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .activity figure{
+        margin: 0 auto;
+    }
+
+    footer{
+        flex-direction: column! important;
+        margin-top: 2rem;
+    }
+
+
+
 }
