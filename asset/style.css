@@ -18,8 +18,14 @@ header{
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: inherit;
+    flex-wrap: wrap;
+
+}
+
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .img-logo{
@@ -223,15 +229,20 @@ padding: 0.5rem;
 
 .hosting img{
     border-radius: 1.5rem 1.5rem 0 0;
+<<<<<<< HEAD
     object-fit: cover;
     width: 100%;
     height: 8rem;
+=======
+    width: 15rem;
+>>>>>>> principal
 }
 
 .popular{
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 2rem;
+    max-width: 25rem;
 }
 
 .popular h2{
@@ -240,7 +251,10 @@ padding: 0.5rem;
 
 .popular img{
     border-radius: 1.5rem 0 0 1.5rem;
+<<<<<<< HEAD
     object-fit: cover;
+=======
+>>>>>>> principal
     width: 10rem;
 }
 
@@ -285,15 +299,38 @@ figcaption p{
     margin: 0.5rem 0;
 }
 
+<<<<<<< HEAD
+=======
+.popular figcaption{
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+.popular figure{
+    margin: 2rem 0;
+    display: run-in;
+}
+
+.star{
+    color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+.popular .star{
+    padding-top: 2rem;
+}
+
+.more-info{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+>>>>>>> principal
 .activity{
     margin-bottom: 3rem;
     padding-top: 2rem;
 }
-
-.activity-column{
-    flex-direction: column;
-}
-
 
 .activity figure{
     background: #f2f2f2;
@@ -313,6 +350,7 @@ figcaption p{
     width: 100%;
 }
 
+<<<<<<< HEAD
 .img-1{
     height: 30rem;
 }
@@ -336,6 +374,33 @@ figcaption p{
 .img-6{
     height: 14rem;
 }
+=======
+.column-left>img{
+    height: 25rem;
+}
+
+.column-right{
+    flex-direction: column;
+}
+
+.column-right>figure>.img-top{
+    height: 12em;
+}
+
+.column-right>figure>.img-top-2{
+    height: 9em;
+}
+
+.column-right>figure>.img-bottom{
+    height: 7em;
+}
+
+.column-right>figure>.img-bottom-2{
+    height: 10em;
+}
+
+
+>>>>>>> principal
 
 
             /*FOOTER*/
@@ -385,6 +450,7 @@ footer a{
 
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 640px){
 
     header{
@@ -493,3 +559,24 @@ footer a{
 
 
 }
+=======
+@media (max-width: 590px) { 
+
+    .popular{
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    header, main, footer{
+        margin: 0rem;
+    }
+
+    #hosting{
+        flex-wrap: wrap-reverse;
+    }
+
+
+}
+
+
+>>>>>>> principal
