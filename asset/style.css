@@ -1,4 +1,4 @@
-            /*body*/
+/*body*/
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -18,13 +18,8 @@ header{
 
 .flex{
     display: flex;
-    justify-content: start;
-    flex-direction: inherit;
-    flex-wrap: wrap;
-}
-
-.justify-content-between{
     justify-content: space-between;
+    flex-direction: inherit;
 }
 
 .img-logo{
@@ -40,6 +35,7 @@ header{
 .item-menu ul{
     list-style: none;
     margin: 3.5rem 0 0 0;
+    
 }
 
 .item-menu a:link{
@@ -83,6 +79,7 @@ h1{
     margin-bottom: 0;
     font-size: 1.5rem;
 }
+
 
 
 .filter{
@@ -199,6 +196,10 @@ padding: 0.5rem;
     border: none;
 }
 
+.button-responsive{
+    display: none !important;
+}
+
 .champ::placeholder{
     color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
@@ -229,14 +230,12 @@ padding: 0.5rem;
     object-fit: cover;
     width: 100%;
     height: 8rem;
-    width: 15rem;
 }
 
 .popular{
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 2rem;
-    max-width: 25rem;
 }
 
 .popular h2{
@@ -290,35 +289,15 @@ figcaption p{
     margin: 0.5rem 0;
 }
 
-.popular figcaption{
-    margin-left: 1rem;
-    padding-right: 1rem;
-}
-
-.popular figure{
-    margin: 2rem 0;
-    display: run-in;
-}
-
-.star{
-    color: #f2f2f2;
-    margin-bottom: 1rem;
-}
-
-.popular .star{
-    padding-top: 2rem;
-}
-
-.more-info{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
 .activity{
     margin-bottom: 3rem;
     padding-top: 2rem;
 }
+
+.activity-column{
+    flex-direction: column;
+}
+
 
 .activity figure{
     background: #f2f2f2;
@@ -361,31 +340,6 @@ figcaption p{
 .img-6{
     height: 14rem;
 }
-
-.column-left>img{
-    height: 25rem;
-}
-
-.column-right{
-    flex-direction: column;
-}
-
-.column-right>figure>.img-top{
-    height: 12em;
-}
-
-.column-right>figure>.img-top-2{
-    height: 9em;
-}
-
-.column-right>figure>.img-bottom{
-    height: 7em;
-}
-
-.column-right>figure>.img-bottom-2{
-    height: 10em;
-}
-
 
 
             /*FOOTER*/
@@ -434,6 +388,7 @@ footer a{
 }
 
 
+
 @media screen and (max-width: 640px){
 
     header{
@@ -445,18 +400,21 @@ footer a{
     }
 
     .img-logo{
-        padding: 2rem 0 0 2rem;
+        padding: 1rem 0 0 1rem;
     }
 
     .item-menu ul {
         margin: 1rem 0;
-        padding: 0 2rem;
+        justify-content: center;
+        padding: 0;
     }
 
     .item-menu ul a {
         margin: 1rem 0;
         padding: 0;
+        font-weight: bold;
     }
+
 
 
     header:first-child{
@@ -465,13 +423,13 @@ footer a{
     }
 
     .h1, .filter, .search-bar, .info{
-        margin: 0 1rem;
+        margin: 0 2rem;
     }
 
-    .register{
-        position: relative;
-        bottom: 3em;
-        right: 4rem;
+    .register {
+        position: absolute;
+        bottom: 39rem;
+        right: 2rem;
     }
 
     .champ{
@@ -482,13 +440,13 @@ footer a{
         display: none;
     }
 
-    .button-responsive, input[type="value"]{
-        display: hidden;
-        background: url(./asset/img/);
+    .button-responsive{
+        display: block !important;
     }
 
     .filter{
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .filter ul{
@@ -507,7 +465,7 @@ footer a{
         flex-direction: column;
         padding: 0;
         background: none;
-        margin: 0 auto;
+        margin: 0 2rem;
     }
 
     .hosting figure{
@@ -522,20 +480,31 @@ footer a{
 
     .activity-item-nav{
         margin: 0 3rem;
+        padding-left: 4rem;
     }
 
     .activity{
         flex-direction: column;
-        margin: 0 auto;
-        margin-top: 2rem;
+        margin: 2rem auto;
+        padding: 0 2rem;
     }
 
     .activity figure{
-        margin: 0 auto;
+        margin: 1rem auto;
+        width: 100%;
     }
 
     footer{
         flex-direction: column! important;
         margin-top: 2rem;
     }
-}    
+
+    footer div{
+        margin-right: 0;
+    }
+
+    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
+        height: 10rem;
+    }
+
+}
