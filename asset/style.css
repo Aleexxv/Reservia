@@ -16,9 +16,15 @@ header{
     display: block;
 }
 
+
+header .header{
+    justify-content: space-between;
+}
+
+
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: inherit;
 }
 
@@ -94,10 +100,11 @@ h1{
 
 .filter ul{
 padding: 0.5rem;
+flex-wrap: wrap;
 }
 
 .filter ul li{
-    margin: 0rem 1rem;
+    margin: 1rem;
     padding-right: 1rem;
     border: #ebebeb solid 0.1rem;
     border-radius: 5rem;
@@ -144,8 +151,8 @@ padding: 0.5rem;
 }
 
 .filter a{
-        color: black;
-        text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 .filter{
@@ -210,6 +217,11 @@ padding: 0.5rem;
     padding: 0 0 1rem 0;
 }
 
+
+.fig-wrap{
+    flex-wrap: wrap;
+}
+
 #hosting{
     margin-bottom: 2rem;
 }
@@ -222,7 +234,7 @@ padding: 0.5rem;
 }
 
 .hosting figure{
-    width: 15rem
+    width: 13rem
 }
 
 .hosting img{
@@ -387,7 +399,24 @@ footer a{
     color: black;
 }
 
+@media screen and (max-width: 1280px){
+    #hosting{
+        flex-wrap: wrap;
+    }
 
+    .popular{
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+    .hosting figure{
+        width: 100%;
+    }
+
+
+}
 
 @media screen and (max-width: 640px){
 
@@ -444,10 +473,10 @@ footer a{
         display: block !important;
     }
 
-    .filter{
+    /* .filter{
         flex-direction: column;
         flex-wrap: wrap;
-    }
+    } */
 
     .filter ul{
         margin-top: 0;
@@ -468,6 +497,10 @@ footer a{
         margin: 0 2rem;
     }
 
+    .hosting img{
+        height: 10rem;
+    }
+
     .hosting figure{
         margin: 1rem auto;
         width: 95%;
@@ -476,6 +509,10 @@ footer a{
 
     .popular{
         border-radius: 0;
+    }
+
+    .popular img{
+        height: 100%;
     }
 
     .activity-item-nav{
