@@ -1,10 +1,10 @@
 /*body*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1550px;
 }
-
 
 
 
@@ -36,6 +36,8 @@ header .header{
 .item-menu a{
     padding: 0 2.3rem;
     text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 
 .item-menu ul{
@@ -46,11 +48,6 @@ header .header{
 
 .item-menu a:link{
     color: #0065FC;
-}
-
-.item-menu a{
-    color: black;
-    font-weight: 500;
 }
 
 .item-menu a:focus{
@@ -72,6 +69,9 @@ header .header{
     color: #0065FC!important;
 }
 
+.register-responsive {
+    display: none;
+}
 
 
             /*MAIN*/
@@ -101,10 +101,12 @@ h1{
 .filter ul{
 padding: 0.5rem;
 flex-wrap: wrap;
+justify-content: start;
 }
 
 .filter ul li{
-    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     padding-right: 1rem;
     border: #ebebeb solid 0.1rem;
     border-radius: 5rem;
@@ -170,6 +172,7 @@ flex-wrap: wrap;
 
 .form{
     padding: 0;
+    display: block ruby;
 }
 
 .marker{
@@ -204,7 +207,13 @@ flex-wrap: wrap;
 }
 
 .button-responsive{
+    background: #0065FC;
+    color: white;
+    padding: 1.3rem;
+    border-radius: 1rem;
     display: none !important;
+    position: relative;
+    right: 0.5rem;
 }
 
 .champ::placeholder{
@@ -234,7 +243,7 @@ flex-wrap: wrap;
 }
 
 .hosting figure{
-    width: 13rem
+    width: 15rem
 }
 
 .hosting img{
@@ -257,7 +266,7 @@ flex-wrap: wrap;
 .popular img{
     border-radius: 1.5rem 0 0 1.5rem;
     object-fit: cover;
-    width: 10rem;
+    width: 8rem;
 }
 
 .popular figcaption{
@@ -399,26 +408,34 @@ footer a{
     color: black;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1260px){
+
     #hosting{
         flex-wrap: wrap;
     }
 
+    .hosting{
+        margin-right: 0;      
+    }
+    
     .popular{
         margin-top: 2rem;
     }
 
-}
-
-@media screen and (max-width: 980px){
-    .hosting figure{
-        width: 100%;
+    footer div{
+        flex-wrap: wrap;
+        justify-content: start
     }
-
 
 }
 
 @media screen and (max-width: 640px){
+
+    .hosting figure{
+        width: 90%;
+        margin: 1rem auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 2rem 2rem 0;
+    }
 
     header{
         margin: 0 1rem;
@@ -435,7 +452,12 @@ footer a{
     .item-menu ul {
         margin: 1rem 0;
         justify-content: center;
-        padding: 0;
+    }
+
+    .item-menu ul li{
+        border-bottom: 2px solid rgb(209, 209, 209);
+        padding: 0 0 2rem 0;
+        background: red;
     }
 
     .item-menu ul a {
@@ -445,20 +467,24 @@ footer a{
     }
 
 
-
     header:first-child{
         flex-direction: column;
         padding: 0;
     }
 
     .h1, .filter, .search-bar, .info{
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
 
     .register {
-        position: absolute;
-        bottom: 39rem;
-        right: 2rem;
+        display: none;
+    }
+
+    .register-responsive{
+        display: initial;
+        position: relative;
+        bottom: 7.5rem;
+        left: 75%;
     }
 
     .champ{
@@ -473,10 +499,9 @@ footer a{
         display: block !important;
     }
 
-    /* .filter{
-        flex-direction: column;
+    .filter{
         flex-wrap: wrap;
-    } */
+    }
 
     .filter ul{
         margin-top: 0;
@@ -494,21 +519,16 @@ footer a{
         flex-direction: column;
         padding: 0;
         background: none;
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
 
     .hosting img{
         height: 10rem;
     }
 
-    .hosting figure{
-        margin: 1rem auto;
-        width: 95%;
-        box-shadow: rgba(100, 100, 111, 0.2) 0 2rem 2rem 0;
-    }
-
     .popular{
         border-radius: 0;
+        padding: 1rem;
     }
 
     .popular img{
@@ -517,7 +537,6 @@ footer a{
 
     .activity-item-nav{
         margin: 0 3rem;
-        padding-left: 4rem;
     }
 
     .activity{
@@ -545,3 +564,25 @@ footer a{
     }
 
 }
+
+@media screen and (max-width: 540px){
+    .register-responsive {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .register-responsive {
+        left: 60%;
+    }
+
+    .popular img {
+        border-radius: 1.5rem 0 0 1.5rem;
+        object-fit: cover;
+        width: 5rem;
+    }
+
+    .hosting figure {
+        width: 90%;
+    }
+} 
