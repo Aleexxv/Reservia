@@ -314,6 +314,12 @@ figcaption p{
     margin: 0.5rem 0;
 }
 
+.button-more-hosting{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
 .activity{
     margin-bottom: 3rem;
     padding-top: 2rem;
@@ -389,7 +395,7 @@ footer>div{
 
 footer div {
     margin-right: 17rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 footer h2{
@@ -431,6 +437,13 @@ footer a{
         justify-content: start
     }
 
+}
+
+@media screen and (max-width: 1240px){
+    footer div {
+        margin-right: 10rem;
+        margin-bottom: 4rem;
+    }
 }
 
 @media screen and (max-width: 640px){
