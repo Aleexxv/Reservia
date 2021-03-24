@@ -59,8 +59,7 @@ header .header{
     color: #0065FC;
 }
 
-.item-menu ul li:nth-child(3){
-    color: #0065FC;
+.item-menu .color-blue{
     font-weight: bold;
 }
 
@@ -379,22 +378,8 @@ footer{
     width: 100%;
 }
 
-footer div{
-    justify-content: start;
-    margin-top: 2rem;
-}
-
-footer>div:nth-child(1){
-    margin: 0 3rem;
-}
-
-footer>div{
-    margin: 0 3rem;
-}
-
-footer div {
-    margin-right: 17rem;
-    margin-bottom: 3rem;
+.footer{
+    justify-content: space-around;
 }
 
 footer h2{
@@ -418,12 +403,7 @@ footer a{
 }
 
 @media screen and (max-width: 1260px){
-    footer div{
-        flex-wrap: wrap;
-        justify-content: start;
-        margin-right: 10rem;
-        margin-bottom: 4rem;
-    }
+
 
 }
 
@@ -574,6 +554,7 @@ footer a{
     footer{
         flex-direction: column! important;
         margin-top: 2rem;
+        padding-left: 2rem;
     }
 
     footer div{
