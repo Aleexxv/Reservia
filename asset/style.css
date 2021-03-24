@@ -256,6 +256,7 @@ justify-content: start;
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 2rem;
+    min-width: 19rem;
 }
 
 .popular div:first-child{
@@ -418,19 +419,6 @@ footer a{
 }
 
 @media screen and (max-width: 1260px){
-
-    #hosting{
-        flex-wrap: wrap;
-    }
-
-    .hosting{
-        margin-right: 0;      
-    }
-    
-    .popular{
-        margin-top: 2rem;
-    }
-
     footer div{
         flex-wrap: wrap;
         justify-content: start
