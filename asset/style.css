@@ -30,7 +30,7 @@ header .header{
 
 .img-logo{
     max-width: 7rem;
-    padding: 3.5rem 0 0 0 ;
+    padding: 2.5rem 0 0 0 ;
 }
 
 .item-menu a{
@@ -43,7 +43,6 @@ header .header{
 .item-menu ul{
     list-style: none;
     margin: 3.5rem 0 0 0;
-    
 }
 
 .item-menu a:link{
@@ -469,12 +468,27 @@ footer a{
     .item-menu ul {
         margin: 1rem 0;
         justify-content: center;
+        padding: 0;
     }
 
     .item-menu ul li{
-        border-bottom: 2px solid rgb(209, 209, 209);
-        padding: 0 0 2rem 0;
-        background: red;
+        border-bottom: 3px solid rgb(219, 219, 219);
+        padding: 0 7rem 2rem 7rem;
+    }
+
+    .item-menu ul li:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+
+    
+    .item-menu a:focus{
+        color: #0065FC;
+        border-top: 0;
+        padding-top: 0rem;
+    }
+
+    .item-menu ul li:focus{
+        border-bottom: 3px solid #0065FC;
     }
 
     .item-menu ul a {
@@ -552,10 +566,6 @@ footer a{
         height: 100%;
     }
 
-    .activity-item-nav{
-        margin: 0 3rem;
-    }
-
     .activity{
         flex-direction: column;
         margin: 2rem auto;
@@ -586,6 +596,11 @@ footer a{
     .register-responsive {
         left: 70%;
     }
+
+    .item-menu ul li{
+        padding: 0 6rem 2rem 6rem;
+    }
+
 }
 
 @media screen and (max-width: 440px){
@@ -602,4 +617,15 @@ footer a{
     .hosting figure {
         width: 90%;
     }
-} 
+
+    .item-menu ul li{
+        padding: 0 4rem 2rem 4rem;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    .item-menu ul li{
+        padding: 0 2.5rem 2rem 2.5rem;
+    }
+}
