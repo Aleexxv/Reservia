@@ -256,7 +256,6 @@ justify-content: start;
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 2rem;
-    min-width: 19rem;
 }
 
 .popular div:first-child{
@@ -421,16 +420,11 @@ footer a{
 @media screen and (max-width: 1260px){
     footer div{
         flex-wrap: wrap;
-        justify-content: start
-    }
-
-}
-
-@media screen and (max-width: 1240px){
-    footer div {
+        justify-content: start;
         margin-right: 10rem;
         margin-bottom: 4rem;
     }
+
 }
 
 @media screen and (max-width: 640px){
@@ -470,7 +464,7 @@ footer a{
 
     .item-menu ul li{
         border-bottom: 3px solid rgb(219, 219, 219);
-        padding: 0 0rem 1rem 0rem;
+        padding: 0 3rem 1rem 3rem;
     }
 
     .item-menu ul li:hover{
