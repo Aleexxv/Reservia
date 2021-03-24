@@ -45,10 +45,6 @@ header .header{
     margin: 3.5rem 0 0 0;
 }
 
-.item-menu a:link{
-    color: #0065FC;
-}
-
 .item-menu a:focus{
     color: #0065FC;
     border-top: #0065FC 0.2rem solid;
@@ -416,7 +412,7 @@ footer a{
     }
 
     header{
-        margin: 0 1rem;
+        margin: 0;
     }
 
     main{
@@ -444,7 +440,7 @@ footer a{
 
     .item-menu ul li{
         border-bottom: 3px solid rgb(219, 219, 219);
-        padding: 0 2rem 1rem 2rem;
+        padding: 0 4rem 1rem 4rem;
     }
 
     .item-menu ul li:hover{
@@ -488,7 +484,7 @@ footer a{
     .register-responsive{
         display: initial;
         position: relative;
-        bottom: 6.5rem;
+        bottom: 7.5rem;
         left: 80%;
     }
 
@@ -502,6 +498,11 @@ footer a{
 
     .button-responsive{
         display: block !important;
+        width: 15px;
+    }
+
+    .form{
+        display: flex;
     }
 
     .filter{
@@ -554,13 +555,13 @@ footer a{
     footer{
         flex-direction: column! important;
         margin-top: 2rem;
-        padding-left: 2rem;
     }
 
     footer div{
         margin-right: 0;
         margin-bottom: 1rem;
         padding: 2rem 0;
+        padding-left: 2rem;
     }
 
     .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
@@ -573,10 +574,6 @@ footer a{
     .register-responsive {
         left: 70%;
     }
-
-    /* .item-menu ul li{
-        padding: 0 6rem 2rem 6rem;
-    } */
 
 }
 
@@ -595,14 +592,10 @@ footer a{
         width: 90%;
     }
 
-    /* .item-menu ul li{
-        padding: 0 4rem 2rem 4rem;
-    } */
-
 }
 
-/* @media screen and (max-width: 340px){
+@media screen and (max-width: 340px){
     .item-menu ul li{
         padding: 0 2.5rem 2rem 2.5rem;
     }
-} */
+} 
