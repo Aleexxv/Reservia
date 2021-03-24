@@ -259,6 +259,10 @@ justify-content: start;
     border-radius: 2rem;
 }
 
+.popular div:first-child{
+    justify-content: space-between;
+}
+
 .popular h2{
     margin-bottom: 0;
 }
