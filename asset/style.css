@@ -489,6 +489,9 @@ footer a{
         border-bottom: 3px solid #0065FC;
     }
 
+    .register-responsive a{
+        padding: 0;
+    }
     
     .item-menu a:focus{
         color: #0065FC;
@@ -524,7 +527,7 @@ footer a{
         display: initial;
         position: relative;
         bottom: 6.5rem;
-        left: 75%;
+        left: 80%;
     }
 
     .champ{
@@ -593,6 +596,7 @@ footer a{
 
     footer div{
         margin-right: 0;
+        margin-bottom: 1rem;
     }
 
     .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
@@ -614,7 +618,7 @@ footer a{
 
 @media screen and (max-width: 440px){
     .register-responsive {
-        left: 60%;
+        left: 70%;
     }
 
     .popular img {
