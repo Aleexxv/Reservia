@@ -253,6 +253,10 @@ justify-content: start;
     border-radius: 2rem;
 }
 
+.popular figcaption{
+
+}
+
 .popular div:first-child{
     justify-content: space-between;
 }
@@ -270,6 +274,7 @@ justify-content: start;
 .popular figcaption{
     margin-left: 1rem;
     padding-right: 1rem;
+    min-width: 10rem;
 }
 
 .popular figure{
