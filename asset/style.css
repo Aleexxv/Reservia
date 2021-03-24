@@ -378,6 +378,10 @@ footer{
     width: 100%;
 }
 
+footer div{
+    padding: 2rem 0;
+}
+
 .footer{
     justify-content: space-around;
 }
@@ -402,10 +406,6 @@ footer a{
     color: black;
 }
 
-@media screen and (max-width: 1260px){
-
-
-}
 
 @media screen and (max-width: 640px){
 
@@ -560,6 +560,7 @@ footer a{
     footer div{
         margin-right: 0;
         margin-bottom: 1rem;
+        padding: 2rem 0;
     }
 
     .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
