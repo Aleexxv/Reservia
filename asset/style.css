@@ -465,15 +465,24 @@ footer a{
         padding: 1rem 0 0 1rem;
     }
 
+    .color-blue{
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    .item-menu{
+        height: 3rem;
+    }
+
     .item-menu ul {
         margin: 1rem 0;
-        justify-content: center;
+        justify-content: space-around;
         padding: 0;
     }
 
     .item-menu ul li{
         border-bottom: 3px solid rgb(219, 219, 219);
-        padding: 0 7rem 2rem 7rem;
+        padding: 0 0rem 1rem 0rem;
     }
 
     .item-menu ul li:hover{
@@ -514,12 +523,12 @@ footer a{
     .register-responsive{
         display: initial;
         position: relative;
-        bottom: 7.5rem;
+        bottom: 6.5rem;
         left: 75%;
     }
 
     .champ{
-        width: 50%;
+        width: 54%;
     }
 
     .button{
@@ -539,7 +548,7 @@ footer a{
     }
 
     .filter p{
-        margin-bottom: 0;
+        margin: 0;
     }
 
     #hosting {
@@ -597,9 +606,9 @@ footer a{
         left: 70%;
     }
 
-    .item-menu ul li{
+    /* .item-menu ul li{
         padding: 0 6rem 2rem 6rem;
-    }
+    } */
 
 }
 
@@ -618,14 +627,14 @@ footer a{
         width: 90%;
     }
 
-    .item-menu ul li{
+    /* .item-menu ul li{
         padding: 0 4rem 2rem 4rem;
-    }
+    } */
 
 }
 
-@media screen and (max-width: 340px){
+/* @media screen and (max-width: 340px){
     .item-menu ul li{
         padding: 0 2.5rem 2rem 2.5rem;
     }
-}
+} */
