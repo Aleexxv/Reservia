@@ -253,10 +253,6 @@ justify-content: start;
     border-radius: 2rem;
 }
 
-.popular figcaption{
-
-}
-
 .popular div:first-child{
     justify-content: space-between;
 }
