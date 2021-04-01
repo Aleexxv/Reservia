@@ -43,6 +43,11 @@ header .header{
 .item-menu ul{
     list-style: none;
     margin: 3.5rem 0 0 0;
+
+}
+
+.item-menu ul li{
+    display: block;
 }
 
 .item-menu a:focus{
@@ -59,14 +64,15 @@ header .header{
     font-weight: bold;
 }
 
+.register{
+    padding-top: 2.5rem;
+}
+
 .color-blue{
     color: #0065FC!important;
+    text-decoration: none;
+    font-weight: 500;
 }
-
-.register-responsive {
-    display: none;
-}
-
 
             /*MAIN*/
 
@@ -79,7 +85,6 @@ h1{
     margin-bottom: 0;
     font-size: 1.5rem;
 }
-
 
 
 .filter{
@@ -264,13 +269,15 @@ justify-content: start;
 .popular img{
     border-radius: 1.5rem 0 0 1.5rem;
     object-fit: cover;
-    width: 8rem;
+    width: 100%;
+    max-width: 25rem;
+min-width: 6rem;
 }
 
 .popular figcaption{
     margin-left: 1rem;
     padding-right: 1rem;
-    min-width: 10rem;
+    min-width: 11rem;
 }
 
 .popular figure{
@@ -284,8 +291,13 @@ justify-content: start;
     margin-bottom: 1rem;
 }
 
-.popular .star{
+
+.star.down-star{
     padding-top: 2rem;
+}
+
+.star.down-star-2{
+    padding-top: 1.5rem
 }
 
 
@@ -313,6 +325,7 @@ figcaption p{
     text-decoration: none;
     color: black;
     font-weight: 700;
+    padding-left: 2rem;
 }
 
 .activity{
@@ -328,7 +341,7 @@ figcaption p{
 .activity figure{
     background: #f2f2f2;
     padding: 0;
-    margin: 1;
+    margin: 1rem;
     width: 20rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0 2rem 2rem 0;
 }
@@ -376,11 +389,11 @@ footer{
 }
 
 footer div{
-    padding: 2rem 0;
+    padding: 3rem;
 }
 
 .footer{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 footer h2{
@@ -404,7 +417,7 @@ footer a{
 }
 
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 794px){
 
     .hosting figure{
         width: 90%;
@@ -425,12 +438,7 @@ footer a{
     }
 
     .color-blue{
-        margin-top: 1rem;
         font-weight: bold;
-    }
-
-    .item-menu{
-        height: 3rem;
     }
 
     .item-menu ul {
@@ -441,16 +449,15 @@ footer a{
 
     .item-menu ul li{
         border-bottom: 3px solid rgb(219, 219, 219);
-        padding: 0 4rem 1rem 4rem;
+        width: 50%;
+        padding-bottom: 1rem;
+        display: flex;
     }
 
     .item-menu ul li:hover{
         border-bottom: 3px solid #0065FC;
     }
 
-    .register-responsive a{
-        padding: 0;
-    }
     
     .item-menu a:focus{
         color: #0065FC;
@@ -462,9 +469,7 @@ footer a{
         border-bottom: 3px solid #0065FC;
     }
 
-    .item-menu ul a {
-        margin: 1rem 0;
-        padding: 0;
+    .item-menu ul li a {
         font-weight: bold;
     }
 
@@ -478,15 +483,15 @@ footer a{
         margin: 0 1rem;
     }
 
-    .register {
-        display: none;
+    .menu{
+        flex-direction: column-reverse;
+        position: relative;
+        top: -3rem;
     }
 
-    .register-responsive{
-        display: initial;
-        position: relative;
-        bottom: 7.5rem;
-        left: 80%;
+    .register {
+        justify-content: right;
+        padding-right: 1rem;
     }
 
     .champ{
@@ -542,6 +547,10 @@ footer a{
         height: 100%;
     }
 
+    .button-more-hosting{
+        padding-left: 1rem;
+    }
+
     .activity{
         flex-direction: column;
         margin: 2rem auto;
@@ -568,35 +577,7 @@ footer a{
     .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
         height: 10rem;
     }
-
 }
 
-@media screen and (max-width: 540px){
-    .register-responsive {
-        left: 70%;
-    }
 
-}
 
-@media screen and (max-width: 440px){
-    .register-responsive {
-        left: 70%;
-    }
-
-    .popular img {
-        border-radius: 1.5rem 0 0 1.5rem;
-        object-fit: cover;
-        width: 5rem;
-    }
-
-    .hosting figure {
-        width: 90%;
-    }
-
-}
-
-@media screen and (max-width: 340px){
-    .item-menu ul li{
-        padding: 0 2.5rem 2rem 2.5rem;
-    }
-} 

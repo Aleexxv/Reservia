@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
-    <link rel="icon" type="image" sizes="16x16" href="asset/img/logo/Reservia.svg">
+    <link rel="icon"  href="asset/img/logo/Reservia.svg">
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,23 +16,24 @@
 <body>
     <header>
         <div class="flex header"> 
-            <div class="title"><img class="img-logo" src="asset/img/logo/Reservia.svg" alt="Logo réservia"></div>
-            <nav class="item-menu">
-                <ul class="flex">
-                    <li>
-                        <a href="#hosting">Hébergements</a>
-                    </li>
-                    <li class="activity-item-nav">
-                        <a href="#activity">Activités</a>
-                    </li>
-                    <li class="register">
+            <div><img class="img-logo" src="asset/img/logo/Reservia.svg" alt="Logo réservia"></div>
+            <div class="flex menu">
+                <nav class="item-menu">
+                    <ul class="flex">
+                        <li class="flex">
+                            <a href="#hosting">Hébergements</a>
+                        </li>
+                        <li class="flex">
+                            <a href="#activity">Activités</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul>            
+                    <li class="register flex">
                         <a href="#register" class="color-blue">S'inscrire</a>
                     </li>
                 </ul>
-                <li class="register-responsive">
-                    <a href="#register" class="color-blue">S'inscrire</a>
-                </li>
-            </nav>
+            </div>                    
         </div>    
     </header>
 
@@ -68,7 +69,7 @@
                     <figure>
                         <img src="asset/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                         <figcaption>
-                            <h3>Auberge la Cannebière</h5>
+                            <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de<strong> 25€</strong></p>
                             <div class="star">
                                 <i class="fas fa-star color-blue"></i>
@@ -82,7 +83,7 @@
                     <figure>
                         <img src="asset/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         <figcaption>
-                            <h3>Hôtel du port</h5>
+                            <h3>Hôtel du port</h3>
                             <p>Nuit à partir de<strong> 52€</strong></p>
                             <div class="star">
                                 <i class="fas fa-star color-blue"></i>
@@ -96,7 +97,7 @@
                     <figure>
                         <img src="asset/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         <figcaption>
-                            <h3>Hôtel Les mouettes</h5>
+                            <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de<strong> 76€</strong></p>
                             <div class="star">
                                 <i class="fas fa-star color-blue"></i>
@@ -107,8 +108,6 @@
                             </div>
                         </figcaption>
                     </figure>
-                </div>
-                <div class="flex fig-wrap">
                     <figure>
                         <img src="asset/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                         <figcaption>
@@ -167,7 +166,7 @@
                         <figcaption>
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de<strong> 128€</strong></p>
-                            <div class="star">
+                            <div class="star down-star">
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
@@ -181,7 +180,7 @@
                         <figcaption>
                             <h3>Au coeur de l'eau<br>chambres d'hôtes</h3>
                             <p>Nuit à partir de<strong> 71€</strong></p>
-                            <div class="star">
+                            <div class="star down-star">
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
@@ -195,7 +194,7 @@
                         <figcaption>
                             <h3>Hôtel Tout bleu et blanc</h3>
                             <p>Nuit à partir de<strong> 68€</strong></p>
-                            <div class="star">
+                            <div class="star down-star">
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
                                 <i class="fas fa-star color-blue"></i>
@@ -210,46 +209,46 @@
         <div id="activity" class="activity">
             <h2>Activités à Marseilles</h2>
             <div class="flex fig-wrap">
+                <figure>
+                    <img class="img-1" src="asset/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                    <figcaption>
+                        <h4>Vieux Port</h4>
+                    </figcaption>
+                </figure>
+                <div class="flex activity-column">
                     <figure>
-                        <img class="img-1" src="asset/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                        <img class="img-2" src="asset/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                         <figcaption>
-                            <h4>Vieux Port</h4>
+                            <h4>Fort de Pomègues</h4>
                         </figcaption>
                     </figure>
-                    <div class="flex activity-column">
-                        <figure class="test-haut">
-                            <img class="img-2" src="asset/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h4>Fort de Pomègues</h4>
-                            </figcaption>
-                        </figure>
-                        <figure class="test-bas">
-                            <img class="img-3" src="asset/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h4>Iles du Frioule</h4>
-                            </figcaption>
-                        </figure>
-                    </div>
                     <figure>
-                        <img class="img-4" src="asset/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                        <img class="img-3" src="asset/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                         <figcaption>
-                            <h4>Parc National des Calanques</h4>
+                            <h4>Iles du Frioule</h4>
                         </figcaption>
                     </figure>
-                    <div class="flex activity-column">
-                        <figure>
-                            <img class="img-5" src="asset/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h4>Notre-Dame-de-la-Garde</h4>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img class="img-6" src="asset/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                            <figcaption>
-                                <h4>Parc Longchamps</h4>
-                            </figcaption>
-                        </figure>
-                    </div>
+                </div>
+                <figure>
+                    <img class="img-4" src="asset/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                    <figcaption>
+                        <h4>Parc National des Calanques</h4>
+                    </figcaption>
+                </figure>
+                <div class="flex activity-column">
+                <figure>
+                    <img class="img-5" src="asset/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                    <figcaption>
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="img-6" src="asset/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                    <figcaption>
+                        <h4>Parc Longchamps</h4>
+                    </figcaption>
+                </figure>
+                </div>
             </div>
         </div>
     </main>
