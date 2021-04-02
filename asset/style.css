@@ -430,7 +430,7 @@ footer a{
     }
 
     main{
-        margin: 0 auto;
+        margin: -5.5rem auto;
     }
 
     .img-logo{
@@ -486,7 +486,7 @@ footer a{
     .menu{
         flex-direction: column-reverse;
         position: relative;
-        top: -3rem;
+        top: -5.5rem;
     }
 
     .register {
@@ -564,7 +564,7 @@ footer a{
 
     footer{
         flex-direction: column! important;
-        margin-top: 2rem;
+        margin-top: 8.5rem;
     }
 
     footer div{
