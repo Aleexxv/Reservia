@@ -490,9 +490,10 @@ footer a{
     }
 
     .register {
-        justify-content: right;
+        justify-content: flex-end;
         padding-right: 1rem;
-    }
+}
+
 
     .champ{
         width: 54%;
